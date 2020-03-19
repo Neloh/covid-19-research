@@ -6,9 +6,17 @@ It was constructed in Python using a library 'folium' that allows one to build h
 The html map was deployed as a php application.
 
 ## To deploy 
-We used heroku which uses git based commands. This is done after all the relevant php files have been pushed to the Github repo  
+We used heroku which uses git based commands. 
+Firstly, login to heroku with credentials on CLI:
 `heroku login`
+Create the app after you have git add and commit 
+Add files
+`git add .`
+Now commit all changes
+`git commit -m "updated message"`
+Now, create the app name on Heroku repo:
 `heroku create`
+Push the commits made:
 `git push heroku master`
 
 # The App:
