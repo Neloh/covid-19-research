@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_3bdf395547b1419096e60237ce47f62a {
+                position : relative;
+                width : 100.0%;
+                height: 500.0px;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3bdf395547b1419096e60237ce47f62a" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_3bdf395547b1419096e60237ce47f62a = L.map(
+                                  'map_3bdf395547b1419096e60237ce47f62a',
+                                  {center: [-33.792244,25.584875],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_49adc2b2b77a4540aff3d70d40a39f2a = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_3bdf395547b1419096e60237ce47f62a);
+        
+    
+
+            var marker_4cce5729228f4e718e61e4d3d184e2f7 = L.marker(
+                [-26.27076,28.112268],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_3bdf395547b1419096e60237ce47f62a);
+            
+    
+
+                var custom_icon_b1b2033a39504a0da290cc65aaa4cd85 = L.icon({
+                    iconUrl: 'https://hnet.com/png-to-ico/download/20200318-23-dw5o9ip3fCf7okpn-rHlVOe/virus_png51.ico',
+                    iconSize: [40,40],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_4cce5729228f4e718e61e4d3d184e2f7.setIcon(custom_icon_b1b2033a39504a0da290cc65aaa4cd85);
+            
+    
+            var popup_4ac7f875a20e4e63bfce4bac71d201ac = L.popup({maxWidth: '2650'});
+
+            
+                var i_frame_4f42e53b6f094b8585ead28f22cf2d64 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPHA+IAogICAgICAgICAgICAgICAgPGxpPlByb3ZpbmNlOiBHUDwvbGk+CiAgICAgICAgICAgICAgICA8bGk+RmVtYWxlOiAyNzwvbGk+CiAgICAgICAgICAgICAgICA8bGk+TWFsZTogMzY8L2xpPgogICAgICAgICAgICAgICAgPGxpPlRvdGFsIENhc2VzOiAgNjM8L2xpPgogICAgICAgICAgICAgICAgRm9yIHRoZSBmdWxsIGFydGljbGUgcGxlYXNlIHZpc2l0OiAKICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8YSBocmVmID0gImh0dHBzOi8vd3d3LmhlYWx0aDI0LmNvbS9NZWRpY2FsL0luZmVjdGlvdXMtZGlzZWFzZXMvQ29yb25hdmlydXMvIj5odHRwczovL3d3dy5oZWFsdGgyNC5jb20vTWVkaWNhbC9JbmZlY3Rpb3VzLWRpc2Vhc2VzL0Nvcm9uYXZpcnVzLzwvYT4KICAgICAgICAgICAg" width="400" style="border:none !important;" height="250"></iframe>')[0];
+                popup_4ac7f875a20e4e63bfce4bac71d201ac.setContent(i_frame_4f42e53b6f094b8585ead28f22cf2d64);
+            
+
+            marker_4cce5729228f4e718e61e4d3d184e2f7.bindPopup(popup_4ac7f875a20e4e63bfce4bac71d201ac);
+
+            
+        
+    
+
+            var marker_d76d1c83100b4d54b5becaa3a455d831 = L.marker(
+                [-26.27076,28.112268],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_3bdf395547b1419096e60237ce47f62a);
+            
+    
+
+                var custom_icon_64fcee18b3564668a9c226138cf7e26d = L.icon({
+                    iconUrl: 'https://hnet.com/png-to-ico/download/20200318-23-dw5o9ip3fCf7okpn-rHlVOe/virus_png51.ico',
+                    iconSize: [40,40],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d76d1c83100b4d54b5becaa3a455d831.setIcon(custom_icon_64fcee18b3564668a9c226138cf7e26d);
+            
+    
+            var popup_3c28193dd0bc4267ab6e15875792fb1e = L.popup({maxWidth: '2650'});
+
+            
+                var i_frame_76cfef690bf64521aa98814f1ef43e00 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPHA+IAogICAgICAgICAgICAgICAgPGxpPlByb3ZpbmNlOiBHUDwvbGk+CiAgICAgICAgICAgICAgICA8bGk+RmVtYWxlOiAyNzwvbGk+CiAgICAgICAgICAgICAgICA8bGk+TWFsZTogMzY8L2xpPgogICAgICAgICAgICAgICAgPGxpPlRvdGFsIENhc2VzOiAgNjM8L2xpPgogICAgICAgICAgICAgICAgRm9yIHRoZSBmdWxsIGFydGljbGUgcGxlYXNlIHZpc2l0OiAKICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8YSBocmVmID0gImh0dHBzOi8vd3d3LmhlYWx0aDI0LmNvbS9NZWRpY2FsL0luZmVjdGlvdXMtZGlzZWFzZXMvQ29yb25hdmlydXMvIj5odHRwczovL3d3dy5oZWFsdGgyNC5jb20vTWVkaWNhbC9JbmZlY3Rpb3VzLWRpc2Vhc2VzL0Nvcm9uYXZpcnVzLzwvYT4KICAgICAgICAgICAg" width="400" style="border:none !important;" height="250"></iframe>')[0];
+                popup_3c28193dd0bc4267ab6e15875792fb1e.setContent(i_frame_76cfef690bf64521aa98814f1ef43e00);
+            
+
+            marker_d76d1c83100b4d54b5becaa3a455d831.bindPopup(popup_3c28193dd0bc4267ab6e15875792fb1e);
+
+            
+        
+    
+
+            var marker_919f2b0b0693460c8a23f483c96c94f5 = L.marker(
+                [-34.0,20.0],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_3bdf395547b1419096e60237ce47f62a);
+            
+    
+
+                var custom_icon_07125c5c08504faca23048269e44f55d = L.icon({
+                    iconUrl: 'https://hnet.com/png-to-ico/download/20200318-23-dw5o9ip3fCf7okpn-rHlVOe/virus_png51.ico',
+                    iconSize: [40,40],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_919f2b0b0693460c8a23f483c96c94f5.setIcon(custom_icon_07125c5c08504faca23048269e44f55d);
+            
+    
+            var popup_ce8ff8e957bf4195ba0f61bb67bc7a6c = L.popup({maxWidth: '2650'});
+
+            
+                var i_frame_43fd98a65b384a3e8c4c68b392581ae9 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPHA+IAogICAgICAgICAgICAgICAgPGxpPlByb3ZpbmNlOiBXQzwvbGk+CiAgICAgICAgICAgICAgICA8bGk+RmVtYWxlOiAxMDwvbGk+CiAgICAgICAgICAgICAgICA8bGk+TWFsZTogMjE8L2xpPgogICAgICAgICAgICAgICAgPGxpPlRvdGFsIENhc2VzOiAgMzE8L2xpPgogICAgICAgICAgICAgICAgRm9yIHRoZSBmdWxsIGFydGljbGUgcGxlYXNlIHZpc2l0OiAKICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8YSBocmVmID0gImh0dHBzOi8vd3d3LmhlYWx0aDI0LmNvbS9NZWRpY2FsL0luZmVjdGlvdXMtZGlzZWFzZXMvQ29yb25hdmlydXMvIj5odHRwczovL3d3dy5oZWFsdGgyNC5jb20vTWVkaWNhbC9JbmZlY3Rpb3VzLWRpc2Vhc2VzL0Nvcm9uYXZpcnVzLzwvYT4KICAgICAgICAgICAg" width="400" style="border:none !important;" height="250"></iframe>')[0];
+                popup_ce8ff8e957bf4195ba0f61bb67bc7a6c.setContent(i_frame_43fd98a65b384a3e8c4c68b392581ae9);
+            
+
+            marker_919f2b0b0693460c8a23f483c96c94f5.bindPopup(popup_ce8ff8e957bf4195ba0f61bb67bc7a6c);
+
+            
+        
+    
+
+            var marker_032c2dc4e40c4480882dc00dbce691de = L.marker(
+                [-34.0,20.0],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_3bdf395547b1419096e60237ce47f62a);
+            
+    
+
+                var custom_icon_6edb11a944d24007bf89c6a1d196adf9 = L.icon({
+                    iconUrl: 'https://hnet.com/png-to-ico/download/20200318-23-dw5o9ip3fCf7okpn-rHlVOe/virus_png51.ico',
+                    iconSize: [40,40],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_032c2dc4e40c4480882dc00dbce691de.setIcon(custom_icon_6edb11a944d24007bf89c6a1d196adf9);
+            
+    
+            var popup_11e29d1246e74e0e91262d79195ce90d = L.popup({maxWidth: '2650'});
+
+            
+                var i_frame_0af7eface6be42ea8100d60f6dda66a7 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPHA+IAogICAgICAgICAgICAgICAgPGxpPlByb3ZpbmNlOiBXQzwvbGk+CiAgICAgICAgICAgICAgICA8bGk+RmVtYWxlOiAxMDwvbGk+CiAgICAgICAgICAgICAgICA8bGk+TWFsZTogMjE8L2xpPgogICAgICAgICAgICAgICAgPGxpPlRvdGFsIENhc2VzOiAgMzE8L2xpPgogICAgICAgICAgICAgICAgRm9yIHRoZSBmdWxsIGFydGljbGUgcGxlYXNlIHZpc2l0OiAKICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8YSBocmVmID0gImh0dHBzOi8vd3d3LmhlYWx0aDI0LmNvbS9NZWRpY2FsL0luZmVjdGlvdXMtZGlzZWFzZXMvQ29yb25hdmlydXMvIj5odHRwczovL3d3dy5oZWFsdGgyNC5jb20vTWVkaWNhbC9JbmZlY3Rpb3VzLWRpc2Vhc2VzL0Nvcm9uYXZpcnVzLzwvYT4KICAgICAgICAgICAg" width="400" style="border:none !important;" height="250"></iframe>')[0];
+                popup_11e29d1246e74e0e91262d79195ce90d.setContent(i_frame_0af7eface6be42ea8100d60f6dda66a7);
+            
+
+            marker_032c2dc4e40c4480882dc00dbce691de.bindPopup(popup_11e29d1246e74e0e91262d79195ce90d);
+
+            
+        
+    
+
+            var marker_e4ec69de5d0a41eabb3b88730c00d380 = L.marker(
+                [-29.883333,31.049999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_3bdf395547b1419096e60237ce47f62a);
+            
+    
+
+                var custom_icon_d0852282bf254036a0733f195b564fec = L.icon({
+                    iconUrl: 'https://hnet.com/png-to-ico/download/20200318-23-dw5o9ip3fCf7okpn-rHlVOe/virus_png51.ico',
+                    iconSize: [40,40],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_e4ec69de5d0a41eabb3b88730c00d380.setIcon(custom_icon_d0852282bf254036a0733f195b564fec);
+            
+    
+            var popup_26c5061e57bd4218b62259653eb4a55e = L.popup({maxWidth: '2650'});
+
+            
+                var i_frame_3fe1f4ca92f44a378905f11c4e9438a9 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPHA+IAogICAgICAgICAgICAgICAgPGxpPlByb3ZpbmNlOiBLWk48L2xpPgogICAgICAgICAgICAgICAgPGxpPkZlbWFsZTogMjwvbGk+CiAgICAgICAgICAgICAgICA8bGk+TWFsZTogMTk8L2xpPgogICAgICAgICAgICAgICAgPGxpPlRvdGFsIENhc2VzOiAgMjE8L2xpPgogICAgICAgICAgICAgICAgRm9yIHRoZSBmdWxsIGFydGljbGUgcGxlYXNlIHZpc2l0OiAKICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8YSBocmVmID0gImh0dHBzOi8vd3d3LmhlYWx0aDI0LmNvbS9NZWRpY2FsL0luZmVjdGlvdXMtZGlzZWFzZXMvQ29yb25hdmlydXMvIj5odHRwczovL3d3dy5oZWFsdGgyNC5jb20vTWVkaWNhbC9JbmZlY3Rpb3VzLWRpc2Vhc2VzL0Nvcm9uYXZpcnVzLzwvYT4KICAgICAgICAgICAg" width="400" style="border:none !important;" height="250"></iframe>')[0];
+                popup_26c5061e57bd4218b62259653eb4a55e.setContent(i_frame_3fe1f4ca92f44a378905f11c4e9438a9);
+            
+
+            marker_e4ec69de5d0a41eabb3b88730c00d380.bindPopup(popup_26c5061e57bd4218b62259653eb4a55e);
+
+            
+        
+    
+
+            var marker_cc3fe9d82920467986025a480d62a8a1 = L.marker(
+                [-29.883333,31.049999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_3bdf395547b1419096e60237ce47f62a);
+            
+    
+
+                var custom_icon_64e453c6e7d94700aa8e14747a4e8195 = L.icon({
+                    iconUrl: 'https://hnet.com/png-to-ico/download/20200318-23-dw5o9ip3fCf7okpn-rHlVOe/virus_png51.ico',
+                    iconSize: [40,40],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_cc3fe9d82920467986025a480d62a8a1.setIcon(custom_icon_64e453c6e7d94700aa8e14747a4e8195);
+            
+    
+            var popup_6a6108a67a794ef5882130cc2ccd9869 = L.popup({maxWidth: '2650'});
+
+            
+                var i_frame_8bb168250a094ba197d69eb27cb99761 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPHA+IAogICAgICAgICAgICAgICAgPGxpPlByb3ZpbmNlOiBLWk48L2xpPgogICAgICAgICAgICAgICAgPGxpPkZlbWFsZTogMjwvbGk+CiAgICAgICAgICAgICAgICA8bGk+TWFsZTogMTk8L2xpPgogICAgICAgICAgICAgICAgPGxpPlRvdGFsIENhc2VzOiAgMjE8L2xpPgogICAgICAgICAgICAgICAgRm9yIHRoZSBmdWxsIGFydGljbGUgcGxlYXNlIHZpc2l0OiAKICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8YSBocmVmID0gImh0dHBzOi8vd3d3LmhlYWx0aDI0LmNvbS9NZWRpY2FsL0luZmVjdGlvdXMtZGlzZWFzZXMvQ29yb25hdmlydXMvIj5odHRwczovL3d3dy5oZWFsdGgyNC5jb20vTWVkaWNhbC9JbmZlY3Rpb3VzLWRpc2Vhc2VzL0Nvcm9uYXZpcnVzLzwvYT4KICAgICAgICAgICAg" width="400" style="border:none !important;" height="250"></iframe>')[0];
+                popup_6a6108a67a794ef5882130cc2ccd9869.setContent(i_frame_8bb168250a094ba197d69eb27cb99761);
+            
+
+            marker_cc3fe9d82920467986025a480d62a8a1.bindPopup(popup_6a6108a67a794ef5882130cc2ccd9869);
+
+            
+        
+    
+
+            var marker_564bc8c29c324ee0aa5e0ce881377771 = L.marker(
+                [-25.47447797,30.9703293],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_3bdf395547b1419096e60237ce47f62a);
+            
+    
+
+                var custom_icon_470f657ff48c42ae9780c55af1974b52 = L.icon({
+                    iconUrl: 'https://hnet.com/png-to-ico/download/20200318-23-dw5o9ip3fCf7okpn-rHlVOe/virus_png51.ico',
+                    iconSize: [40,40],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_564bc8c29c324ee0aa5e0ce881377771.setIcon(custom_icon_470f657ff48c42ae9780c55af1974b52);
+            
+    
+            var popup_1aaec494d9e54c73852ee199878f1013 = L.popup({maxWidth: '2650'});
+
+            
+                var i_frame_c0113f207c9f4f3380cf2abd85c1422e = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICAgICAgPHA+IAogICAgICAgICAgICAgICAgPGxpPlByb3ZpbmNlOiBNUDwvbGk+CiAgICAgICAgICAgICAgICA8bGk+RmVtYWxlOiAwPC9saT4KICAgICAgICAgICAgICAgIDxsaT5NYWxlOiAxPC9saT4KICAgICAgICAgICAgICAgIDxsaT5Ub3RhbCBDYXNlczogIDE8L2xpPgogICAgICAgICAgICAgICAgRm9yIHRoZSBmdWxsIGFydGljbGUgcGxlYXNlIHZpc2l0OiAKICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8YSBocmVmID0gImh0dHBzOi8vd3d3LmhlYWx0aDI0LmNvbS9NZWRpY2FsL0luZmVjdGlvdXMtZGlzZWFzZXMvQ29yb25hdmlydXMvIj5odHRwczovL3d3dy5oZWFsdGgyNC5jb20vTWVkaWNhbC9JbmZlY3Rpb3VzLWRpc2Vhc2VzL0Nvcm9uYXZpcnVzLzwvYT4KICAgICAgICAgICAg" width="400" style="border:none !important;" height="250"></iframe>')[0];
+                popup_1aaec494d9e54c73852ee199878f1013.setContent(i_frame_c0113f207c9f4f3380cf2abd85c1422e);
+            
+
+            marker_564bc8c29c324ee0aa5e0ce881377771.bindPopup(popup_1aaec494d9e54c73852ee199878f1013);
+
+            
+        
+</script>
